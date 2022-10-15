@@ -2,6 +2,7 @@ import {useContext, useEffect, useState} from 'react'
 import {Context} from '../../context'
 import {getProducts} from '../../requests/api_req'
 import NavBar from '../NavBar';
+import MainSection from '../MainSection';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <Context.Provider value={{products}}>
       <NavBar/>
+      <MainSection/>
     </Context.Provider>
   );
 }
