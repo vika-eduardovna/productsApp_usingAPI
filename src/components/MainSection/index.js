@@ -6,7 +6,7 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 export default function MainSection() {
   return (
     <div className={['wrapper', s.wrapper].join(' ')}>
-       <img src="https://img.freepik.com/free-photo/gray-sofa-white-living-room-interior-with-copy-space-3d-rendering_43614-802.jpg?w=2000" alt="" />
+       <img src="https://karpentree.com/pub/media/wysiwyg/Picture13.png" alt="" />
 
        <div className={s.shop_now}>
             <h2>High-Quality Furniture Just For You</h2>
@@ -19,7 +19,7 @@ export default function MainSection() {
             <span>Luxury big sofa 2-seat</span>
             <div className={s.icon}>
                 <span>Only today 1699$</span>
-                <i><FontAwesomeIcon icon={faArrowRight}/></i>
+                <FontAwesomeIcon icon={faArrowRight} className={s.arrow}/>
             </div>
        </div>
     </div>
