@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function NavBar() {
   return (
     <div className={['wrapper', s.wrapper].join(' ')}>
-      <p className={s.logo}>Funiro.</p>
+      <p className={s.logo}>Cosmo.</p>
       <ul className={s.list}>
         <li>Products <i><FontAwesomeIcon icon={faAngleDown} /></i></li>
         <li>Rooms <i><FontAwesomeIcon icon={faAngleDown} /></i></li>
