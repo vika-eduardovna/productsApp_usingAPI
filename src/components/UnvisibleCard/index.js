@@ -7,6 +7,7 @@ import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
 export default function UnvisibleCard() {
   return (
     <div className={s.icons_hover}>
+          <button>Add to cart</button>
           <i> <FontAwesomeIcon icon={faShareNodes} />Share</i>
           <i> <FontAwesomeIcon icon={faHeart} />Like</i>
         </div>

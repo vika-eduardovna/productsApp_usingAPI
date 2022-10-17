@@ -15,6 +15,7 @@ export default function ProductContainer() {
           products.map(el => <ProductItem key={el.id} {...el} />)
         }
       </div>
+      <button className={s.button}>Show more</button>
     </div>
   )
 }
