@@ -5,6 +5,8 @@ import NavBar from '../NavBar';
 import MainSection from '../MainSection';
 import Services from '../Services';
 import ProductContainer from '../ProductContainer';
+import AddProductSection from '../AddProductSection';
+
 
 
 function App() {
@@ -15,16 +17,19 @@ function App() {
     getProducts(setProducts);
   }, []);
 
+  const addProduct = product => setProducts(prev => [...prev, product]);
+
   const removeProd = id => {
     setProducts(products.filter(item => item.id !== id));
     deleteProduct(console.log, id)
   }
 
   return (
-    <Context.Provider value={{ products, removeProd }}>
+    <Context.Provider value={{ products, addProduct, removeProd }}>
       <NavBar />
       <MainSection />
       <Services />
+      <AddProductSection/>
       <ProductContainer />
     </Context.Provider>
   );

@@ -6,9 +6,10 @@ import { useContext } from 'react'
 import { Context } from '../../context'
 
 
+
 export default function ProductItem({ id, image, title, description, price }) {
   const { removeProd } = useContext(Context);
-  const [style, setStyle] = useState({display: 'none' });
+  const [style, setStyle] = useState({ display: 'none' });
 
   return (
     <div

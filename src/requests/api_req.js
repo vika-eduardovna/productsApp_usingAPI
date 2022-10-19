@@ -13,3 +13,15 @@ export const deleteProduct = (callback, id) =>
     })
         .then(res => res.json())
         .then(json => callback(json))
+
+        export const addNewProd = (body, callback) => {
+            fetch('https://fakestoreapi.com/products', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            })
+                .then(res => res.json())
+                .then(json => callback(json))
+        }

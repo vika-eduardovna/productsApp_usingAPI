@@ -12,7 +12,9 @@ export default function ProductContainer() {
       <h3 className={s.subheader}>Our products</h3>
       <div className={s.products}>
         {
-          products.map(el => <ProductItem key={el.id} {...el} />)
+          products.length === 0
+            ? <p>'No products here...'</p>
+            : products.map(el => <ProductItem key={el.id} {...el} />)
         }
       </div>
       <button className={s.button}>Show more</button>
